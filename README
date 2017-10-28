@@ -13,15 +13,13 @@ Decompress in your ~/vimfiles or ~/.vim, if you're using
 pathogen / vundle then (you should), put it in ~/.vim/bundle/elixirConceal
 folder.
 
-Bundle 'arcseldon/elixirConceal
+Bundle 'arcseldon/elixirConceal'
 
 ## Disable
 
 If you wish to disable usage whilst installed, just add
 
-```
 let g:no_elixir_conceal = 1
-```
 
 to your .vimrc
 
