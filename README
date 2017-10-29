@@ -1,11 +1,13 @@
-Use Vim 7.3 Conceal feature to display unicode operator
-in Elixir without changing the underlying file.
+## Description
 
-Version 1 focuses on overriding |> (pipe operator) to be ▶
+Use Vim 7.3 Conceal feature to display unicode operators
+in Elixir without changing the underlying file.
 
 Easy to use the same approach to override others
 
 GitHub: https://github.com/arcseldon/vim-elixirConceal
+
+![](sample.gif)
 
 ## Installation
 
@@ -13,7 +15,11 @@ Decompress in your ~/vimfiles or ~/.vim, if you're using
 pathogen / vundle then (you should), put it in ~/.vim/bundle/elixirConceal
 folder.
 
+[Vundle](https://github.com/VundleVim/Vundle.vim) - add:
+
 Bundle 'arcseldon/vim-elixirConceal'
+
+:PluginInstall
 
 ## Disable Option
 
