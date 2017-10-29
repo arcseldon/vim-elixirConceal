@@ -2,8 +2,8 @@
 " What Is This: Add some conceal operator for your elixir files
 " File:         elixir.vim (conceal enhancement)
 " Author:       arcseldon
-" Last Change:  2017-10-28
-" Version:      1.0.0
+" Last Change:  2017-10-29
+" Version:      1.0.1
 " Require:
 "   set nocompatible
 "     somewhere on your .vimrc
@@ -24,6 +24,7 @@
 "       line in your .vimrc :
 "        let g:no_elixir_conceal = 1
 "  Changelog:
+"   - 1.0.1  Update pipe operator symbol and add few extra operator overrides
 "   - 1.0.0  Initial release - just override pipe operator
 "
 if exists('g:no_elixir_conceal') || !has('conceal') || &enc != 'utf-8'
@@ -34,7 +35,15 @@ endif
 "     finish
 " endif
 
-syntax match exNiceOperator "|>" conceal cchar=▶
+" syntax match exNiceOperator "|>" conceal cchar=▶
+syntax match exNiceOperator "|>" conceal cchar=▷
+syntax match exNiceOperator "<-" conceal cchar=←
+syntax match exNiceOperator "->" conceal cchar=→
+syntax match exNiceOperator "==" conceal cchar=≡
+syntax match exNiceOperator "!=" conceal cchar=≢
+syntax match exNiceOperator "<=" conceal cchar=≤
+syntax match exNiceOperator ">=" conceal cchar=≥
+
 
 hi link exNiceOperator Operator
 hi! link Conceal Operator
