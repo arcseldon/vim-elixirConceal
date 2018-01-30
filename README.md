@@ -29,6 +29,18 @@ let g:no_elixir_conceal = 1
 
 to your .vimrc
 
+## Update 30/01/2018
+
+Sneaked Elm support into this plugin.
+
+If you wish to disable usage whilst installed, just add
+
+let g:no_elm_conceal = 1
+
+to your .vimrc
+
+## Credits
+
 This repo is heavily inspired by:
 
 - https://github.com/Twinside/vim-haskellConceal
